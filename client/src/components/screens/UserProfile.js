@@ -85,21 +85,21 @@ const Profile  = ()=>{
            <div style={{
                display:"flex",
                justifyContent:"space-around",
-               margin:"18px 0px",
+               margin:"5% 0px",
                borderBottom:"1px solid grey"
            }}>
                <div>
-                   <img style={{width:"160px",height:"160px",borderRadius:"80px"}}
+                   <img style={{width:"80px",height:"80px",borderRadius:"40px"}}
                    src={userProfile.user.pic}
                    />
                </div>
                <div>
-                   <h4>{userProfile.user.name}</h4>
-                   <h5>{userProfile.user.email}</h5>
-                   <div style={{display:"flex",justifyContent:"space-between",width:"108%"}}>
-                       <h6>{userProfile.posts.length} posts</h6>
-                       <h6>{userProfile.user.followers.length} followers</h6>
-                       <h6>{userProfile.user.following.length} following</h6>
+                   <h4 style={{fontWeight:"400",fontSize:"20px"}}>{userProfile.user.name}</h4>
+                   <h5 style={{fontWeight:"300",fontSize:"15px"}}>{userProfile.user.email}</h5>
+                   <div style={{display:"flex",justifyContent:"space-between",width:"104%"}}>
+                       <h6 style={{fontWeight:"300"}}>{userProfile.posts.length} posts</h6>
+                       <h6 style={{fontWeight:"300"}}>{userProfile.user.followers.length} followers</h6>
+                       <h6 style={{fontWeight:"300"}}>{userProfile.user.following.length} following</h6>
                    </div>
                    {showfollow?
                    <button style={{
