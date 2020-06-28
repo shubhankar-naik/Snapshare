@@ -20,7 +20,7 @@ const NavBar = ()=>{
             <li key="4"><Link to="/">All</Link></li>,
             <li key="2"><Link to="/profile">Profile</Link></li>,
             <li key="3"><Link to="/create">Add Post</Link></li>,
-            <li key="4"><Link to="/myfollowingpost">Following</Link></li>,
+            <li key="4"><Link to="/myfollowingpost">Follow</Link></li>,
             <li  key="5">
              <button className="btn #c62828 red darken-3"
             onClick={()=>{
