@@ -10,6 +10,7 @@ a{
 
 ul li{
 margin-left:0.01em;
+  padding:0 5px !important;
 }
 
 .mycard{
