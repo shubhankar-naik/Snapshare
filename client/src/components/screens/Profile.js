@@ -77,7 +77,7 @@ const Profile  = ()=>{
                </div>
                <div>
                    <h4 style={{fontWeight:"400",fontSize:"20px"}}>{state?state.name:"loading"}</h4>
-                   <h5 style={{fontWeight:"400",fontSize:"15px"}}>{state?state.email:"loading"}</h5>
+                   <h5 style={{fontWeight:"300",fontSize:"15px"}}>{state?state.email:"loading"}</h5>
                    <div style={{display:"flex",justifyContent:"space-between",width:"104%"}}>
                        <h6 style={{fontWeight:"300"}}>{mypics.length} posts</h6>
                        <h6 style={{fontWeight:"300"}}>{state?state.followers.length:"0"} followers</h6>
