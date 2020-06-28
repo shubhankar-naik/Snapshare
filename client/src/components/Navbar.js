@@ -17,10 +17,10 @@ const NavBar = ()=>{
            return [
            // <li key="8" className="logo"><img src={logo} alt="logo"/></li>,
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
-            <li key="4"><Link to="/">Home</Link></li>,
+            <li key="8"><Link to="/">All</Link></li>,
             <li key="2"><Link to="/profile">Profile</Link></li>,
             <li key="3"><Link to="/create">Add Post</Link></li>,
-            //<li key="4"><Link to="/myfollowingpost">Follow</Link></li>,
+            <li key="4"><Link to="/myfollowingpost">Follow</Link></li>,
             <li  key="5">
              <button className="btn #c62828 red darken-3"
             onClick={()=>{
@@ -61,6 +61,7 @@ const NavBar = ()=>{
         })
      }
     return(
+        <div className="navbar-fixed" style={{height:"100px"}}>
         <nav>
         <div className="nav-wrapper white">
           <Link to={state?"/":"/signin"} className="brand-logo left"></Link>
@@ -92,6 +93,7 @@ const NavBar = ()=>{
           </div>
         </div>
       </nav>
+    </div>
     )
 }
 
