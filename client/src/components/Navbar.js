@@ -17,10 +17,10 @@ const NavBar = ()=>{
            return [
            // <li key="8" className="logo"><img src={logo} alt="logo"/></li>,
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
-            <li key="4"><Link to="/">All</Link></li>,
+            <li key="4"><Link to="/">Home</Link></li>,
             <li key="2"><Link to="/profile">Profile</Link></li>,
             <li key="3"><Link to="/create">Add Post</Link></li>,
-            <li key="4"><Link to="/myfollowingpost">Follow</Link></li>,
+            //<li key="4"><Link to="/myfollowingpost">Follow</Link></li>,
             <li  key="5">
              <button className="btn #c62828 red darken-3"
             onClick={()=>{
