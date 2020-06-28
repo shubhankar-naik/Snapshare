@@ -61,7 +61,7 @@ const NavBar = ()=>{
         })
      }
     return(
-        <div className="navbar-fixed" style={{height:"100px"}}>
+        <div className="navbar-fixed">
         <nav>
         <div className="nav-wrapper white">
           <Link to={state?"/":"/signin"} className="brand-logo left"></Link>
