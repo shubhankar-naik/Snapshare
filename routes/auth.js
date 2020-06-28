@@ -27,7 +27,7 @@ router.post('/signup',(req,res)=>{
   User.findOne({email:email})
   .then((savedUser)=>{
       if(savedUser){
-        return res.status(422).json({error:"user already exists with that email"})
+        return res.status(422).json({error:"user already exists"})
       }
       bcrypt.hash(password,12)
       .then(hashedpassword=>{
@@ -111,7 +111,7 @@ router.post('/reset-password',(req,res)=>{
          User.findOne({email:req.body.email})
          .then(user=>{
              if(!user){
-                 return res.status(422).json({error:"User dont exists with that email"})
+                 return res.status(422).json({error:"User doesn't exist"})
              }
              user.resetToken = token
              user.expireToken = Date.now() + 3600000
