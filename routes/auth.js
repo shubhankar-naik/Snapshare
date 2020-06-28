@@ -40,7 +40,7 @@ router.post('/signup',(req,res)=>{
     
             user.save()
             .then(user=>{
-                res.json({message:"saved successfully"})
+                res.json({message:"Account created"})
                 const transporter= nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
@@ -126,7 +126,7 @@ router.post('/reset-password',(req,res)=>{
                     `
                 })
             })
-                 res.json({message:"check your email"})
+                 res.json({message:"Check your email"})
              })
 
          })
