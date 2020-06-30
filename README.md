@@ -1,6 +1,6 @@
 ### [Live Site](https://snapshareco.herokuapp.com/)
 
-Snapshare is a clone of instagram but with features like-:  
+Snapshare is a clone of instagram with features like-:  
 - ```Signup``` using your email id  
 - ```Login``` using the same email id and password entered during the signup  
 - ```Post``` photos and share with all and you can ```delete``` them if you want  
