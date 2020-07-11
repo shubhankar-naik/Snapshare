@@ -20,7 +20,7 @@ const NavBar = ()=>{
             <li key="8" ><Link to="/"><i className="material-icons">&#xe88a;</i></Link></li>,
             <li key="2" ><Link to="/profile"><i className="material-icons">&#xe7fd;</i></Link></li>,
             <li key="3" ><Link to="/create"><i style={{fontSize:'20px',height:"50%"}} className='fas'>&#xf067;</i></Link></li>,
-            //<li key="4"><Link to="/myfollowingpost">Following</Link></li>,
+            <li key="4"><Link to="/myfollowingpost"><i style={{fontSize:'20px',height:"50%"}} class='fas'>&#xf061;</i></Link></li>,
             <li  key="5">
              <button className="btn #c62828 red darken-3"
             onClick={()=>{
